@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@500&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+main{
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+}
+
+header{
+    display: inline;
+}
+nav{
+    overflow: hidden; 
+    position: sticky;
+    top: 0;  
+    background-color: rgb(179, 122, 47);
+    
+}
+
+
+.logo img{
+    width:47px;
+    
+    
+}
+
+.logo ul li{
+    list-style-type: none;
+    float: left;
+
+}
+
+
+
+
+
+/* card section */
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin : 5px;
+    background-color: wheat;
+    text-align: center;
+}
+
+.featured-image{   
+    width:100%;
+    height:83px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+}
+
+.one,.two,.three,.four{
+    width: 40%; 
+}
+
+.container {
+    padding: 16px;
+}
+.full-width {
+    width: 100%;
+}
+
+/* cock-list */
+cock-list {
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px;
+    display: block;
+}
+
+cock-list > .placeholder {
+    font-weight: lighter;
+    color: rgba(0,0,0,0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+drink-item {
+    margin-bottom: 24px;
+    box-shadow: 0 4px 8px 0 tan;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+drink-item .drink-item-list {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.drink-info {
+    padding: 24px;
+}
+
+.drink-info > h2 {
+    font-weight: lighter;
+}
+
+.drink-info > p {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; 
+}
+
+
+/* jumbo */
+.jumbotron{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url('../image/fred-moon-0yqa0rMCsYk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 640px;
+}
+
+.banner{
+    padding:150px 33px ;
+}
+
+h1,h4 {
+    color: wheat;
+    text-align: center;
+}
+
+h2{
+    color: rgb(87, 51, 4);
+    text-align: center;
+    padding: 20px;
+    background-color: tan;
+}
+
+
+/* searchbar */
+
+.search-container {
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 35px;
+    display: flex;
+    margin: 35px auto;
+    background-color: white;
+}
+
+.search-container > input {
+    width: 75%;
+    padding: 16px;
+    border: 0;
+    border-bottom: 1px solid rgb(179, 122, 47);
+    font-weight: bold;
+}
+
+.search-container > input:focus {
+    outline: 0;
+    border-bottom: 2px solid rgb(179, 122, 47);
+}
+
+.search-container > input:focus::placeholder {
+    font-weight: bold;
+}
+
+.search-container >  input::placeholder {
+    color: rgb(179, 122, 47);
+    font-weight: normal;
+}
+
+.search-container > button {
+    width: 23%;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 16px;
+    background-color: rgb(179, 122, 47);
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 35px;
+}
+
+
+/* responsive mobile */
+
+@media screen and (max-width:1000px){
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    .one,.two,.three,.four{
+        width: 70%; 
+        margin: 20px auto;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .search-container {
+        flex-direction: column;
+        position: static;
+    }
+
+    .search-container > input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .search-container > button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
